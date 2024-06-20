@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Multi browser test">
+	<parameter name="browser" value="Edge"> </parameter>
+	<test name="chrome test">
+		<classes>
+			<class name="testscript.Logintest">
+				<methods>
+					<include name="verifyTheUserAbleToLoginValidCredentials">
+
+					</include>
+				</methods>
+			</class>
+
+		</classes>
+		<!-- Test -->
+	</test>
+	<test name="Edge Test">
+
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="testscript.Logintest">
+				<methods>
+					<include name="verifyTheUserAbleToLoginValidCredentials"></include>
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+
+</suite> <!--
+Suite -->
